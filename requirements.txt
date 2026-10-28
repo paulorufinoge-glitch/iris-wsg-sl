@@ -1,0 +1,9 @@
+# Runtime (pins chosen from my knowledge of released versions; verify the image builds)
+geopandas==1.0.1
+shapely==2.0.6
+pyproj==3.7.0
+pyogrio==0.10.0
+pandas==2.2.3
+numpy==2.1.3
+requests==2.32.3
+psycopg[binary]==3.2.3

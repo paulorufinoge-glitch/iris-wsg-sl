@@ -1,0 +1,29 @@
+{
+  "_WARNING": "Field names below are ASSUMED placeholders. The live schema was not verified. Run `python -m wsg.cli schema` against the live service, then edit this file. A field set to null is treated as 'not published'.",
+  "id_field": "zone_id",
+  "name_field": "name",
+  "zone_field": "zone",
+  "status_field": "status",
+  "restriction_field": "restriction",
+  "extraction_rate_field": "extraction_rate",
+  "extraction_unit_field": "extraction_unit",
+  "updated_field": "updated",
+  "value_maps": {
+    "_comment": "Exact-match lookup after whitespace/case normalisation. NO substring or regex inference. Extend ONLY with values actually observed in the live data. Unlisted values become UNKNOWN (raw value kept).",
+    "zone": {
+      "I": "ZONE_I", "Zone I": "ZONE_I", "Schutzzone I": "ZONE_I",
+      "II": "ZONE_II", "Zone II": "ZONE_II", "Schutzzone II": "ZONE_II",
+      "III": "ZONE_III", "Zone III": "ZONE_III", "Schutzzone III": "ZONE_III",
+      "IIIA": "ZONE_IIIA", "III A": "ZONE_IIIA", "Zone IIIA": "ZONE_IIIA", "Zone III A": "ZONE_IIIA",
+      "IIIB": "ZONE_IIIB", "III B": "ZONE_IIIB", "Zone IIIB": "ZONE_IIIB", "Zone III B": "ZONE_IIIB"
+    },
+    "status": {
+      "festgesetzt": "IN_FORCE",
+      "in kraft": "IN_FORCE",
+      "geplant": "PLANNED",
+      "in planung": "PLANNED",
+      "aufgehoben": "REVOKED"
+    },
+    "restriction": {}
+  }
+}

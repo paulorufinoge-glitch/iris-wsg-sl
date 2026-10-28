@@ -1,0 +1,454 @@
+{
+ "type": "FeatureCollection",
+ "_comment": "SYNTHETIC fixture for tests. Not real GDI-Saarland data. Attribute names are assumed.",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:EPSG::25832"
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-001-I",
+    "name": "Synthetic WSG A",
+    "zone": "I",
+    "status": "festgesetzt",
+    "updated": "2024-05-01"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       354000,
+       5455000
+      ],
+      [
+       354100,
+       5455000
+      ],
+      [
+       354100,
+       5455100
+      ],
+      [
+       354000,
+       5455100
+      ],
+      [
+       354000,
+       5455000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-001-II",
+    "name": "Synthetic WSG A",
+    "zone": "II",
+    "status": "festgesetzt",
+    "updated": "2024-05-01"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       354100,
+       5455000
+      ],
+      [
+       354300,
+       5455000
+      ],
+      [
+       354300,
+       5455100
+      ],
+      [
+       354100,
+       5455100
+      ],
+      [
+       354100,
+       5455000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-001-III",
+    "name": "Synthetic WSG A",
+    "zone": "III",
+    "status": "festgesetzt"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        354300,
+        5455000
+       ],
+       [
+        354600,
+        5455000
+       ],
+       [
+        354600,
+        5455100
+       ],
+       [
+        354300,
+        5455100
+       ],
+       [
+        354300,
+        5455000
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        354000,
+        5455200
+       ],
+       [
+        354200,
+        5455200
+       ],
+       [
+        354200,
+        5455300
+       ],
+       [
+        354000,
+        5455300
+       ],
+       [
+        354000,
+        5455200
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-002-IIIA",
+    "name": "Synthetic WSG B",
+    "zone": "IIIA",
+    "status": "festgesetzt"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       356000,
+       5455000
+      ],
+      [
+       356200,
+       5455000
+      ],
+      [
+       356200,
+       5455200
+      ],
+      [
+       356000,
+       5455200
+      ],
+      [
+       356000,
+       5455000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-003-BOWTIE",
+    "name": "Self-intersecting",
+    "zone": "II",
+    "status": "festgesetzt"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       357000,
+       5455000
+      ],
+      [
+       357100,
+       5455100
+      ],
+      [
+       357100,
+       5455000
+      ],
+      [
+       357000,
+       5455100
+      ],
+      [
+       357000,
+       5455000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-004-NULLGEOM",
+    "zone": "I",
+    "status": "festgesetzt"
+   },
+   "geometry": null
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone": "I",
+    "status": "festgesetzt"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       363000,
+       5455000
+      ],
+      [
+       363100,
+       5455000
+      ],
+      [
+       363100,
+       5455100
+      ],
+      [
+       363000,
+       5455100
+      ],
+      [
+       363000,
+       5455000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-001-I",
+    "zone": "I",
+    "status": "festgesetzt"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       363500,
+       5455000
+      ],
+      [
+       363600,
+       5455000
+      ],
+      [
+       363600,
+       5455100
+      ],
+      [
+       363500,
+       5455100
+      ],
+      [
+       363500,
+       5455000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-005-TRAP",
+    "zone": "Zone III (aufgehoben)",
+    "status": "aufgehoben"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       358000,
+       5455000
+      ],
+      [
+       358100,
+       5455000
+      ],
+      [
+       358100,
+       5455100
+      ],
+      [
+       358000,
+       5455100
+      ],
+      [
+       358000,
+       5455000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-006-POINT",
+    "zone": "I"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     354000,
+     5455000
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-007-NOZONE",
+    "name": "No zone/status published"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       359000,
+       5455000
+      ],
+      [
+       359100,
+       5455000
+      ],
+      [
+       359100,
+       5455100
+      ],
+      [
+       359000,
+       5455100
+      ],
+      [
+       359000,
+       5455000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-008-WRONGCRS",
+    "zone": "I",
+    "status": "festgesetzt"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.0,
+       49.2
+      ],
+      [
+       7.001,
+       49.2
+      ],
+      [
+       7.001,
+       49.201
+      ],
+      [
+       7.0,
+       49.201
+      ],
+      [
+       7.0,
+       49.2
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "zone_id": "SYN-009-RATE",
+    "zone": "III",
+    "status": "festgesetzt",
+    "restriction": "Nr. 3",
+    "extraction_rate": "1200",
+    "extraction_unit": "m3/a"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       360000,
+       5455000
+      ],
+      [
+       360100,
+       5455000
+      ],
+      [
+       360100,
+       5455100
+      ],
+      [
+       360000,
+       5455100
+      ],
+      [
+       360000,
+       5455000
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

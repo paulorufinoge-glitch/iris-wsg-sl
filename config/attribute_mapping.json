@@ -1,0 +1,23 @@
+{
+  "_NOTE": "Field names and value domains VERIFIED on 2026-10-28 by reading all 353 records of the live GDI-Saarland layer Schutzgebiete_INS:Wasserschutzgebiet. The layer publishes NO status, restriction-category or extraction-rate attribute (stored as UNKNOWN/NULL). VERORDNUNG is the date of the legal ordinance, not a data-update date, so updated_field is null. LAND holds SL (350 rows) and RLP (3 rows), so state_code is taken from it.",
+  "id_field": "gml_id",
+  "state_field": "LAND",
+  "name_field": "NAME",
+  "zone_field": "SCHUTZZONE",
+  "status_field": null,
+  "restriction_field": null,
+  "extraction_rate_field": null,
+  "extraction_unit_field": null,
+  "updated_field": null,
+  "value_maps": {
+    "_comment": "Exact-match lookup after whitespace/case normalisation. NO substring or regex inference. SCHUTZZONE takes exactly the values B, I, II, III in the live data. 'B' (1 record, WSG Bietzener Wiesen) is a separate zone defined by that ordinance ('Schutzzone B', permit-required activities) - seen in search-result excerpts of the ordinance text, NOT yet read in full: confirm against the ordinance (record URL attribute). Any other value becomes UNKNOWN + ZONE_UNMAPPED.",
+    "zone": {
+      "I": "ZONE_I",
+      "II": "ZONE_II",
+      "III": "ZONE_III",
+      "B": "ZONE_B"
+    },
+    "status": {},
+    "restriction": {}
+  }
+}

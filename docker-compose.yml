@@ -1,0 +1,38 @@
+# Local, isolated STAGING stack. It never touches iris_core or any external database.
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: iris_staging_db
+      POSTGRES_USER: iris_stg
+      POSTGRES_PASSWORD: ${STAGING_DB_PASSWORD:?copy .env.example to .env and set it}
+    ports: ["127.0.0.1:5433:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql/000_extensions.sql:/docker-entrypoint-initdb.d/000_extensions.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U iris_stg -d iris_staging_db"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  app:
+    build: .
+    environment: &appenv
+      IRIS_DB_DSN: postgresql://iris_stg:${STAGING_DB_PASSWORD}@db:5432/iris_staging_db
+      IRIS_DB_SCHEMA: iris_staging
+    depends_on:
+      db: {condition: service_healthy}
+    volumes: ["./out:/app/out"]
+    profiles: ["run"]
+
+  tests:
+    build: .
+    entrypoint: ["python", "-m", "pytest", "-v"]
+    environment: *appenv
+    depends_on:
+      db: {condition: service_healthy}
+    profiles: ["test"]
+
+volumes:
+  pgdata:
